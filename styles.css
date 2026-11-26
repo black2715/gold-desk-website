@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#0b1018;--panel:#121b26;--text:#f2f5f8;--muted:#a5b1bf;--gold:#d9a441;--line:#263342}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;line-height:1.65}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 max(6vw,24px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:12px;color:var(--text);font-weight:700;text-decoration:none;font-family:Manrope,sans-serif}
+.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--gold);color:#17130b;display:grid;place-items:center;font-weight:800}
+nav{display:flex;gap:25px}nav a,footer a{color:var(--muted);text-decoration:none;font-size:14px}nav a:hover,footer a:hover{color:var(--gold)}
+main{max-width:1050px;margin:0 auto;padding:0 24px}
+.hero{padding:105px 0 90px;max-width:750px}
+.eyebrow{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:2.4px}
+h1,h2{font-family:Manrope,sans-serif;line-height:1.2}
+h1{font-size:clamp(42px,7vw,76px);letter-spacing:-2.7px;margin:20px 0}
+h1 span{color:var(--gold)}
+.lead{font-size:19px;color:var(--muted);max-width:620px;margin:0 0 32px}
+.primary{display:inline-block;padding:13px 20px;background:var(--gold);color:#14120c;text-decoration:none;font-weight:700;border-radius:8px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:60px}
+.features article,.note{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:25px}
+.number{color:var(--gold);font-weight:700;font-size:13px}
+.features h2{font-size:19px;margin:12px 0}
+.features p,.note p{color:var(--muted);font-size:15px;margin-bottom:0}
+.note{margin-bottom:80px}.note h2{font-size:23px;margin-top:0}
+footer{border-top:1px solid var(--line);padding:25px max(6vw,24px);display:flex;justify-content:space-between;color:var(--muted);font-size:13px}
+.policy{max-width:800px;padding-top:65px;padding-bottom:80px}
+.policy h1{font-size:50px;margin:14px 0}
+.updated{color:var(--muted);font-size:14px;margin-bottom:35px}
+.policy h2{font-size:22px;margin:34px 0 10px}
+.policy p{color:#c2ccd6}
+.disclaimer{margin-top:40px;padding:18px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:14px}
+@media(max-width:700px){.features{grid-template-columns:1fr}.hero{padding:70px 0}.nav{padding:0 20px}nav{gap:14px}.policy h1{font-size:40px}footer{padding:22px 20px}}
